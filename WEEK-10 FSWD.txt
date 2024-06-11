@@ -1,0 +1,85 @@
+****************WEEK-10************************
+
+Abhi@LAPTOP-L0IB MINGW64 ~
+$ cd Desktop
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop
+$ cd gitweek10
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop/gitweek10
+$ ls
+firsttxt.txt
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop/gitweek10
+$ git --version
+git version 2.41.0.windows.1
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop/gitweek10
+$ git config --global user.name "bhavani"
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop/gitweek10
+$ git config --global user.email "bhavani@gmail.com"
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop/gitweek10
+$ git init
+Initialized empty Git repository in C:/Users/Abhi/Desktop/gitweek10/.git/
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop/gitweek10 (master)
+$ git add .
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop/gitweek10 (master)
+$ git remote add origin https://github.com/Abhi/gitpractice.git
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop/gitweek10 (master)
+$ git commit -m "first commit"
+[master (root-commit) 9d988ed] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 firsttxt.txt
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop/gitweek10 (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 288 bytes | 144.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Abhi2234/gitpractice.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop/gitweek10 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+nothing to commit, working tree clean
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop/gitweek10 (master)
+$ cat firsttxt.txt
+GitHub is a cloud-based platform where you can store, share, and work together with others to write code
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop/gitweek10 (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.04 KiB | 33.00 KiB/s, done.
+From https://github.com/Abhi2234/gitpractice
+   9d988ed..167e570  master     -> origin/master
+Updating 9d988ed..167e570
+Fast-forward
+ firsttxt.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Abhi@LAPTOP-L0IB MINGW64 ~/Desktop/gitweek10 (master)
+$ cat firsttxt.txt
+GitHub is a cloud-based platform where you can store, share, and work together with others to write code.
+Storing your code in a "repository" on GitHub allows you to: Showcase or share your work. Track and manage changes to your code over time
+
+Abhi@LAPTOP-T1Q2L0IB MINGW64 ~/Desktop/gitweek10 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
